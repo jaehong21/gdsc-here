@@ -47,9 +47,60 @@ Main files are located at **`gdsc-here/here-android/app/src/main/java/com/exampl
 This folder includes poetry projects with backend server using FastAPI. Its project is Dockerized and being deployed in GCP.
 
 Address: http://here.jaehong21.com <br />
+
 **Health Check API**
 
 ```shell
 curl --location 'http://here.jaehong21.com/name'
 curl --location 'http://here.jaehong21.com/alert'
+```
+
+<br />
+
+**Speech To Text API** <br />
+
+```shell
+curl --location 'http://here.jaehong21.com/name/predict' \
+--form 'file=@"audiorecordtest-0.mp4"'
+```
+
+```json
+{
+  "transcript": "사람이 말하면 그거 따라서",
+  "confidence": 0.6189181208610535
+}
+```
+
+<br />
+
+**Alert Classification API** <br />
+
+```shell
+curl --location 'http://here.jaehong21.com/alert/predict' \
+--form 'file=@"audiorecordtest-0.mp4"'
+```
+
+```json
+{
+  "classifications": [
+    {
+      "categories": [
+        {
+          "index": 8,
+          "score": 0.597916305065155,
+          "display_name": "",
+          "category_name": "8 카페"
+        },
+        {
+          "index": 0,
+          "score": 0.08570388704538345,
+          "display_name": "",
+          "category_name": "0 Background Noise"
+        }
+      ],
+      "head_index": 0,
+      "head_name": "probability"
+    }
+  ]
+}
 ```
