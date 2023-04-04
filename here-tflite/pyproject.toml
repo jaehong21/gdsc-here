@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "here-be-alert"
+version = "0.1.0"
+description = ""
+authors = ["jclee0109 <jclee0109@gist.ac.kr>"]
+# readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.95.0"
+aiofiles = "^23.1.0"
+uvicorn = "^0.21.1"
+gunicorn = "^20.1.0"
+tflite-support = "^0.4.3"
+pydub = "^0.25.1"
+python-multipart = "^0.0.6"
+orjson = "^3.8.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

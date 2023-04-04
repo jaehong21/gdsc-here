@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
+.vscode
+
+# Ignore local environment files
+.env
+gdsc-here.json

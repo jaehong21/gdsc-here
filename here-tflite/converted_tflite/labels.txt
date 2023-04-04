@@ -1,0 +1,9 @@
+0 Background Noise
+1 ambulance
+2 police
+3 감염
+4 공습
+5 대피
+6 민방위
+7 소방
+8 카페
