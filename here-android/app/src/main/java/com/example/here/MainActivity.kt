@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
 
         Log.d("MainActivity", "Name: $name")
         //TODO: check if the user has already set a name
-        if (name != null) {
+        if (name == null) {
             startActivity(Intent(this, InitialActivity::class.java))
         } else {
             startActivity(Intent(this, AlertConfigureActivity::class.java))
