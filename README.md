@@ -1,6 +1,7 @@
-# Here
-
-This is a repository for the Google Developer Student Club at the Gwangju Institute of Science and Technology (GIST).
+# 👋 Here
+ 
+This is a repository for the Google Developer Student Club at the Gwangju Institute of Science and Technology (GIST). <br />
+**Introduction**: https://youtu.be/fGFpgem5E2Q
 
 ```shell
 .
@@ -34,8 +35,9 @@ Main files are located at **`gdsc-here/here-android/app/src/main/java/com/exampl
 
 1. Clone this repository
 2. Open the here-android directory in Android Studio
-3. Build the project
-4. Run the project on a physical device that has a microphone.
+3. Sync the project if it not automatically started
+4. Build the project
+5. Run the project on a physical device that has a microphone.
    (Connect a wear os device to the physical device to get alerts on the wear os device)
 5. Follow the instructions on the screen to get started.
 6. Now, you will get notifications when someone is calling your name or when some alarm is detected.
